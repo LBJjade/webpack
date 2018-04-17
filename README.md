@@ -236,3 +236,4 @@ vue init jamielhf/webpack#template1 name
 #### 参考：  
 [vue-cli webpack的配置详解](http://blog.csdn.net/hongchh/article/details/55113751 )  
 [从vue-cli源码学习如何写模板 ](https://github.com/dwqs/blog/issues/56)  
+123123
