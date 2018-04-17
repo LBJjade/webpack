@@ -1,4 +1,5 @@
 module.exports = {
+
   "helpers": {
     "if_or": function (v1, v2, options) {
       if (v1 || v2) {
@@ -44,6 +45,15 @@ module.exports = {
       "type": "confirm",
       "message": "Install vue-router?"
     },
+    "vuex":{
+      "type": "confirm",
+      "message": "Install vuex?"
+    },
+    "isMobile":{
+        "type": "confirm",
+        "message": "is Mobile project?"
+    },
+
     "lint": {
       "type": "confirm",
       "message": "Use ESLint to lint your code?"
@@ -86,7 +96,10 @@ module.exports = {
     "test/unit/**/*": "unit",
     "build/webpack.test.conf.js": "unit",
     "test/e2e/**/*": "e2e",
-    "src/router/**/*": "router"
+    "src/store/**/*": "vuex",
+    "src/router/**/*": "router",
+    "src/css/min.scss": "isMobile",
+    "static/js/lib-flexible.js": "isMobile",
   },
   "completeMessage": "To get started:\n\n  {{^inPlace}}cd {{destDirName}}\n  {{/inPlace}}npm install\n  npm run dev\n\nDocumentation can be found at https://vuejs-templates.github.io/webpack"
 };
